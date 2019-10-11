@@ -1,1 +1,36 @@
 // Mixins Here
+
+.center {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-mobile {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display(@direction,@jc-center,@ai-center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @jc-center;
+  align-items: @ai-center;
+}
+
+.custom-btn(@bg-color, @width, @txt-color) {
+  display: flex;
+  background-color: @bg-color;
+  margin: 0 10px 20px;
+  width: @width;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @txt-color;
+
+  &:hover {
+    background-color: @txt-color;
+    color: @bg-color;
+  }
+}

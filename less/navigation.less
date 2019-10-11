@@ -1,1 +1,30 @@
 // Navigation code here
+.top-nav {
+  background-color: whitesmoke;
+
+  .nav-bar {
+    .center();
+    .display(column, center, center);
+
+    h1 {
+      font-size: 4rem;
+      margin-top: 5%;
+    }
+    nav {
+      @media @phone {
+        width: 90%;
+      }
+      width: 50%;
+      margin: 2%;
+      .display(row, space-evenly, center);
+
+      a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: black;
+      }
+
+      //3 deep
+    }
+  }
+}
