@@ -221,8 +221,25 @@ footer {
     margin: 0 auto;
   }
 }
+.home .centre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+.home .centre .txt-sky {
+  flex: 1;
+}
+.home .centre .img-sky {
+  width: 90%;
+  flex: 4;
+}
 .home .intro .top-img {
   border-radius: 5px;
+}
+.home .intro .line-through {
+  text-decoration: line-through;
 }
 .home .intro h2 {
   padding: 15px;
@@ -303,7 +320,6 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283a;
   margin: 0 10px 20px;
-  cursor: pointer;
   width: 100px;
   height: 45px;
   font-size: 2rem;
@@ -318,7 +334,6 @@ footer {
   .home .walk .walk-text .btn {
     background-color: #22283a;
     margin: 0 10px 20px;
-    cursor: pointer;
     width: 370px;
     height: 45px;
     border-radius: 10px;
