@@ -1,6 +1,11 @@
 // Home Content
 
 .home {
+  @media @phone {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .intro {
     .top-img {
       border-radius: 5px;
@@ -30,6 +35,8 @@
 
     img {
       @media @phone {
+        width: 90%;
+        .display(column, center, center);
       }
       width: 28%;
       margin: 20px 2.5%;
@@ -51,6 +58,13 @@
   }
 
   .walk {
+    @media @phone {
+      .display(column-reverse, center, center);
+      width: 100%;
+      padding: 0;
+      padding-top: 1%;
+      margin-top: 35px;
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -58,6 +72,9 @@
     justify-content: center;
 
     .walk-text {
+      @media @phone {
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
@@ -69,12 +86,26 @@
       }
 
       .btn {
+        @media @phone {
+          .custom-btn (rgb(34, 40, 58), 370px, white);
+          height: 61px;
+          font-size: 2rem;
+          border-radius: 5px;
+
+          .display(row, center, center);
+        }
         .custom-btn (rgb(34, 40, 58), 100px, white);
         .display(row, center, center);
       }
     }
 
     .walk-img {
+      @media @phone {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        margin: 0;
+      }
       width: 46%;
       margin-left: 4%;
 
