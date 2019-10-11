@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0 auto;
 }
+
 .center-mobile {
   max-width: 90%;
   width: 100%;
@@ -18,18 +19,19 @@
   align-items: @ai-center;
 }
 
-.custom-btn(@bg-color: lavender, @width: 200px, @txt-color: rebeccapurple){
-    display: block;
-    background-color: @bg-color;
-    margin: 0 10px 20px;
-    cursor: pointer;
-    width: @width;
-    height: 45px;
-    font-size: 2rem;
-    border-radius: 10px;
-    color:@txt-color;
-    
-    &:hover{
-      background-color: @txt-color;
-      color: @bg-color;
-    }
+.custom-btn(@bg-color, @width, @txt-color) {
+  display: flex;
+  background-color: @bg-color;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @txt-color;
+
+  &:hover {
+    background-color: @txt-color;
+    color: @bg-color;
+  }
+}
